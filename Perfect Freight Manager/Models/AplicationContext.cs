@@ -12,7 +12,7 @@ namespace Perfect_Freight_Manager.Models
 {
     public class AplicationContext : DbContext
     {
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
         // Crear una instancia global singlenton de LoggerFactory para la version 3.x de EF        
         public static readonly ILoggerFactory MyLoggerFactory
             = LoggerFactory.Create(builder =>
@@ -26,7 +26,7 @@ namespace Perfect_Freight_Manager.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=12345;Server=localhost;Port=5432;Database=PerfectFreight;Integrated Security=true;Pooling=true;")
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=123456;Server=localhost;Port=5432;Database=PerfectFreight;Integrated Security=true;Pooling=true;")
                 .EnableSensitiveDataLogging(true)
             .UseLoggerFactory(MyLoggerFactory);
         }

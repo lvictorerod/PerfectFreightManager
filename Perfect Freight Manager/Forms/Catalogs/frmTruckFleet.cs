@@ -18,7 +18,7 @@ namespace Perfect_Freight_Manager.Forms.Catalogs
     public partial class frmTruckFleet : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
         string TblName = "trucksprofiles";
         int codigo;
         private int sgtetruck = 0, cuentatruck = 0;

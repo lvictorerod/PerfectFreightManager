@@ -10,7 +10,7 @@ namespace Perfect_Freight_Manager.Forms
     public partial class frmLogin : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
         string user,nick,passw;
         private string mensaje;
         string TblName = "adminusers";

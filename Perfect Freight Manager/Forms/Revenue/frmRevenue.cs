@@ -22,8 +22,8 @@ namespace Perfect_Freight_Manager.Forms.Catalogs
     public partial class frmRevenue : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
-        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
         private string TblName = "revenues";
         private int codigoTrip,codigoPickup, codigoFuel, codigoExpenses, codigoRoute, codigoNotes, codigoDocuments, codigoPay;
         private string LoadStatus = "0";

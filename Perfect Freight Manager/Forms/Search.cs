@@ -8,7 +8,7 @@ namespace Perfect_Freight_Manager.Forms.Revenue
     public partial class frmSearch : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
         string TblNameS = "";
         private string nombre, ciudad, estado, zip, contacto, direccion, telef, notas;
         private int driver = 0;
