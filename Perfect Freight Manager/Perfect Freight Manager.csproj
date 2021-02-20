@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF14017C-261E-4291-8898-C75224609C0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Perfect_Freight_Manager</RootNamespace>
+    <AssemblyName>Perfect Freight Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\Rene\source\repos\Perfect Freight Manager\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Identity.Core">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\shared\Microsoft.AspNetCore.App\2.1.17\Microsoft.Extensions.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Accident\DamageAccident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accident\DamageAccident.Designer.cs">
+      <DependentUpon>DamageAccident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\AlertsTrailer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\AlertsTrailer.Designer.cs">
+      <DependentUpon>AlertsTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\AlertsTruck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\AlertsTruck.Designer.cs">
+      <DependentUpon>AlertsTruck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\Appoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\Appoinment.Designer.cs">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\Incidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\Incidencias.Designer.cs">
+      <DependentUpon>Incidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\PickupDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertsIncidences\PickupDrop.Designer.cs">
+      <DependentUpon>PickupDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpDriverPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpDriverPay.Designer.cs">
+      <DependentUpon>frmHelpDriverPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\HelpMttoTrucks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\HelpMttoTrucks.Designer.cs">
+      <DependentUpon>HelpMttoTrucks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoAPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoAPU.Designer.cs">
+      <DependentUpon>MttoAPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoTrailer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoTrailer.Designer.cs">
+      <DependentUpon>MttoTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoTrucks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mantenimiento\MttoTrucks.Designer.cs">
+      <DependentUpon>MttoTrucks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\APUPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\APUPrint.Designer.cs">
+      <DependentUpon>APUPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintSettlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintSettlement.Designer.cs">
+      <DependentUpon>frmPrintSettlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\TrailerPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\TrailerPrint.Designer.cs">
+      <DependentUpon>TrailerPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\TruckPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\TruckPrint.Designer.cs">
+      <DependentUpon>TruckPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmDispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmDispatch.Designer.cs">
+      <DependentUpon>frmDispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmDriverPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmDriverPay.Designer.cs">
+      <DependentUpon>frmDriverPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintCatalogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintCatalogs.Designer.cs">
+      <DependentUpon>frmPrintCatalogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintExpenses.Designer.cs">
+      <DependentUpon>frmPrintExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpensesInvoices\frmResumens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpensesInvoices\frmResumens.Designer.cs">
+      <DependentUpon>frmResumens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAdministration.Designer.cs">
+      <DependentUpon>frmAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMail.Designer.cs">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpAdministration.Designer.cs">
+      <DependentUpon>frmHelpAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpCustomer.Designer.cs">
+      <DependentUpon>frmHelpCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpExpenses.Designer.cs">
+      <DependentUpon>frmHelpExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpMail.Designer.cs">
+      <DependentUpon>frmHelpMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpManager.Designer.cs">
+      <DependentUpon>frmHelpManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpPhoneBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpPhoneBook.Designer.cs">
+      <DependentUpon>frmHelpPhoneBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpRevenue.Designer.cs">
+      <DependentUpon>frmHelpRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpTripPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpTripPlanner.Designer.cs">
+      <DependentUpon>frmHelpTripPlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpTruckFleet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpTruckFleet.Designer.cs">
+      <DependentUpon>frmHelpTruckFleet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpUtilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpUtilities.Designer.cs">
+      <DependentUpon>frmHelpUtilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpVendors.Designer.cs">
+      <DependentUpon>frmHelpVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpWebService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\frmHelpWebService.Designer.cs">
+      <DependentUpon>frmHelpWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmNotes.Designer.cs">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintPdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintPdf.Designer.cs">
+      <DependentUpon>frmPrintPdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmReportsRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmReportsRevenue.Designer.cs">
+      <DependentUpon>frmReportsRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmUtilites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmUtilites.Designer.cs">
+      <DependentUpon>frmUtilites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogClients.Designer.cs">
+      <DependentUpon>frmCatalogClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogInsurance.Designer.cs">
+      <DependentUpon>frmCatalogInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogPhoneBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogPhoneBook.Designer.cs">
+      <DependentUpon>frmCatalogPhoneBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TripPlanner\frmTripPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TripPlanner\frmTripPlanner.Designer.cs">
+      <DependentUpon>frmTripPlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmTruckFleet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmTruckFleet.Designer.cs">
+      <DependentUpon>frmTruckFleet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Catalogs\frmCatalogVendor.Designer.cs">
+      <DependentUpon>frmCatalogVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintUtilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\frmPrintUtilities.Designer.cs">
+      <DependentUpon>frmPrintUtilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmCategorys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmCategorys.Designer.cs">
+      <DependentUpon>frmCategorys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmPDType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmPDType.Designer.cs">
+      <DependentUpon>frmPDType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmRVType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmRVType.Designer.cs">
+      <DependentUpon>frmRVType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmTLType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmTLType.Designer.cs">
+      <DependentUpon>frmTLType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmTRType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmTRType.Designer.cs">
+      <DependentUpon>frmTRType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201030025137_Initial.cs" />
+    <Compile Include="Migrations\20201030025137_Initial.designer.cs">
+      <DependentUpon>20201030025137_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201102001132_Matenimiento2.cs" />
+    <Compile Include="Migrations\20201102001132_Matenimiento2.designer.cs">
+      <DependentUpon>20201102001132_Matenimiento2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201102012058_Matenimiento3.cs" />
+    <Compile Include="Migrations\20201102012058_Matenimiento3.designer.cs">
+      <DependentUpon>20201102012058_Matenimiento3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201102012226_Matenimiento4.cs" />
+    <Compile Include="Migrations\20201102012226_Matenimiento4.designer.cs">
+      <DependentUpon>20201102012226_Matenimiento4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201102012559_Matenimiento5.cs" />
+    <Compile Include="Migrations\20201102012559_Matenimiento5.designer.cs">
+      <DependentUpon>20201102012559_Matenimiento5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201102012755_Matenimiento6.cs" />
+    <Compile Include="Migrations\20201102012755_Matenimiento6.designer.cs">
+      <DependentUpon>20201102012755_Matenimiento6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201106180704_Mantenimiento7.cs" />
+    <Compile Include="Migrations\20201106180704_Mantenimiento7.designer.cs">
+      <DependentUpon>20201106180704_Mantenimiento7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201106180940_Mantenimiento1_17.cs" />
+    <Compile Include="Migrations\20201106180940_Mantenimiento1_17.designer.cs">
+      <DependentUpon>20201106180940_Mantenimiento1_17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201106182353_Mantenimiento18_31.cs" />
+    <Compile Include="Migrations\20201106182353_Mantenimiento18_31.designer.cs">
+      <DependentUpon>20201106182353_Mantenimiento18_31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201106213449_Mantenimiento32_48.cs" />
+    <Compile Include="Migrations\20201106213449_Mantenimiento32_48.designer.cs">
+      <DependentUpon>20201106213449_Mantenimiento32_48.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201106215616_Mantenimiento49_64.cs" />
+    <Compile Include="Migrations\20201106215616_Mantenimiento49_64.designer.cs">
+      <DependentUpon>20201106215616_Mantenimiento49_64.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201111171644_MtoTrailer.cs" />
+    <Compile Include="Migrations\20201111171644_MtoTrailer.designer.cs">
+      <DependentUpon>20201111171644_MtoTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201111172005_MtoTrailer2.cs" />
+    <Compile Include="Migrations\20201111172005_MtoTrailer2.designer.cs">
+      <DependentUpon>20201111172005_MtoTrailer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201111190815_MtoTrailer3.cs" />
+    <Compile Include="Migrations\20201111190815_MtoTrailer3.designer.cs">
+      <DependentUpon>20201111190815_MtoTrailer3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201111191056_MtoTrailer4.cs" />
+    <Compile Include="Migrations\20201111191056_MtoTrailer4.designer.cs">
+      <DependentUpon>20201111191056_MtoTrailer4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201113031431_MtoTrailer5.cs" />
+    <Compile Include="Migrations\20201113031431_MtoTrailer5.designer.cs">
+      <DependentUpon>20201113031431_MtoTrailer5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201113031920_MtoTrailer6.cs" />
+    <Compile Include="Migrations\20201113031920_MtoTrailer6.designer.cs">
+      <DependentUpon>20201113031920_MtoTrailer6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201113192439_MtoApu.cs" />
+    <Compile Include="Migrations\20201113192439_MtoApu.designer.cs">
+      <DependentUpon>20201113192439_MtoApu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201113192719_MtoApu2.cs" />
+    <Compile Include="Migrations\20201113192719_MtoApu2.designer.cs">
+      <DependentUpon>20201113192719_MtoApu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201122144752_MtoApu3.cs" />
+    <Compile Include="Migrations\20201122144752_MtoApu3.designer.cs">
+      <DependentUpon>20201122144752_MtoApu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201127164941_MtoNoOrder.cs" />
+    <Compile Include="Migrations\20201127164941_MtoNoOrder.designer.cs">
+      <DependentUpon>20201127164941_MtoNoOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201127191013_MtoNoOrder2.cs" />
+    <Compile Include="Migrations\20201127191013_MtoNoOrder2.designer.cs">
+      <DependentUpon>20201127191013_MtoNoOrder2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201128004410_MtoNoOrder3.cs" />
+    <Compile Include="Migrations\20201128004410_MtoNoOrder3.designer.cs">
+      <DependentUpon>20201128004410_MtoNoOrder3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204032328_MtoTrucks.cs" />
+    <Compile Include="Migrations\20201204032328_MtoTrucks.designer.cs">
+      <DependentUpon>20201204032328_MtoTrucks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204034640_MtoTrucks2.cs" />
+    <Compile Include="Migrations\20201204034640_MtoTrucks2.designer.cs">
+      <DependentUpon>20201204034640_MtoTrucks2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204034750_MtoTrucks3.cs" />
+    <Compile Include="Migrations\20201204034750_MtoTrucks3.designer.cs">
+      <DependentUpon>20201204034750_MtoTrucks3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204034949_MtoTrucks4.cs" />
+    <Compile Include="Migrations\20201204034949_MtoTrucks4.designer.cs">
+      <DependentUpon>20201204034949_MtoTrucks4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204035841_MtoTrucks5.cs" />
+    <Compile Include="Migrations\20201204035841_MtoTrucks5.designer.cs">
+      <DependentUpon>20201204035841_MtoTrucks5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204042617_MtoTrucks7.cs" />
+    <Compile Include="Migrations\20201204042617_MtoTrucks7.designer.cs">
+      <DependentUpon>20201204042617_MtoTrucks7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204090852_MtoTrucks8.cs" />
+    <Compile Include="Migrations\20201204090852_MtoTrucks8.designer.cs">
+      <DependentUpon>20201204090852_MtoTrucks8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204091043_MtoTrucks9.cs" />
+    <Compile Include="Migrations\20201204091043_MtoTrucks9.designer.cs">
+      <DependentUpon>20201204091043_MtoTrucks9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204114057_MtoTrucks10.cs" />
+    <Compile Include="Migrations\20201204114057_MtoTrucks10.designer.cs">
+      <DependentUpon>20201204114057_MtoTrucks10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201204114259_MtoTrucks11.cs" />
+    <Compile Include="Migrations\20201204114259_MtoTrucks11.designer.cs">
+      <DependentUpon>20201204114259_MtoTrucks11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201207172749_AdminCompany.cs" />
+    <Compile Include="Migrations\20201207172749_AdminCompany.designer.cs">
+      <DependentUpon>20201207172749_AdminCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201209194023_AdminCompany2.cs" />
+    <Compile Include="Migrations\20201209194023_AdminCompany2.designer.cs">
+      <DependentUpon>20201209194023_AdminCompany2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201210173609_Profiles.cs" />
+    <Compile Include="Migrations\20201210173609_Profiles.designer.cs">
+      <DependentUpon>20201210173609_Profiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201218035911_AdminMto.cs" />
+    <Compile Include="Migrations\20201218035911_AdminMto.designer.cs">
+      <DependentUpon>20201218035911_AdminMto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210119200113_DispatchSheet.cs" />
+    <Compile Include="Migrations\20210119200113_DispatchSheet.designer.cs">
+      <DependentUpon>20210119200113_DispatchSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210120134047_PickupDrop.cs" />
+    <Compile Include="Migrations\20210120134047_PickupDrop.designer.cs">
+      <DependentUpon>20210120134047_PickupDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210120234030_PickupDrop2.cs" />
+    <Compile Include="Migrations\20210120234030_PickupDrop2.designer.cs">
+      <DependentUpon>20210120234030_PickupDrop2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210123200750_LoadType1.cs" />
+    <Compile Include="Migrations\20210123200750_LoadType1.designer.cs">
+      <DependentUpon>20210123200750_LoadType1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210124120054_PickupDrop3.cs" />
+    <Compile Include="Migrations\20210124120054_PickupDrop3.designer.cs">
+      <DependentUpon>20210124120054_PickupDrop3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210124133118_TruckTrailer.cs" />
+    <Compile Include="Migrations\20210124133118_TruckTrailer.designer.cs">
+      <DependentUpon>20210124133118_TruckTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210208110829_RVNotes.cs" />
+    <Compile Include="Migrations\20210208110829_RVNotes.designer.cs">
+      <DependentUpon>20210208110829_RVNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210217095115_Fuel.cs" />
+    <Compile Include="Migrations\20210217095115_Fuel.designer.cs">
+      <DependentUpon>20210217095115_Fuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20210217120558_Fuel2.cs" />
+    <Compile Include="Migrations\20210217120558_Fuel2.designer.cs">
+      <DependentUpon>20210217120558_Fuel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\AplicationContextModelSnapshot.cs" />
+    <Compile Include="Models\AdminAcces.cs" />
+    <Compile Include="Models\AdminCompany.cs" />
+    <Compile Include="Models\AdminMaintenance.cs" />
+    <Compile Include="Models\AdminUser.cs" />
+    <Compile Include="Models\AdminSystem.cs" />
+    <Compile Include="Models\Agents.cs" />
+    <Compile Include="Models\AplicationContext.cs" />
+    <Compile Include="Models\ApuProfiles.cs" />
+    <Compile Include="Models\Broker.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CityState.cs" />
+    <Compile Include="Models\Clients.cs" />
+    <Compile Include="Models\CodeZIp.cs" />
+    <Compile Include="Models\CompanyProfile.cs" />
+    <Compile Include="Models\Descriptnotes.cs" />
+    <Compile Include="Models\DispatchSheet.cs" />
+    <Compile Include="Models\DocRegister.cs" />
+    <Compile Include="Models\Documents.cs" />
+    <Compile Include="Models\Driverprofile.cs" />
+    <Compile Include="Models\EmailSetting.cs" />
+    <Compile Include="Models\EmployeeProfile.cs" />
+    <Compile Include="Models\Expense.cs" />
+    <Compile Include="Models\Exresumen.cs" />
+    <Compile Include="Models\FaxSetting.cs" />
+    <Compile Include="Models\Insurance.cs" />
+    <Compile Include="Models\LoadType.cs" />
+    <Compile Include="Models\MaintenanceApu.cs" />
+    <Compile Include="Models\MaintenanceSummer.cs" />
+    <Compile Include="Models\MaintenanceTrailer.cs" />
+    <Compile Include="Models\MaintenanceTruckTipoII.cs" />
+    <Compile Include="Models\MaintenanceTruckTipoIII.cs" />
+    <Compile Include="Models\MaintenanceWinter.cs" />
+    <Compile Include="Models\MaintenanceTruckPM.cs" />
+    <Compile Include="Models\PayCategory.cs" />
+    <Compile Include="Models\PhoneBook.cs" />
+    <Compile Include="Models\PickupDropType.cs" />
+    <Compile Include="Models\Receipt.cs" />
+    <Compile Include="Models\RegisterAccident.cs" />
+    <Compile Include="Models\Revenue.cs" />
+    <Compile Include="Models\RVDriverPay.cs" />
+    <Compile Include="Models\RVExpenses.cs" />
+    <Compile Include="Models\RVFuel.cs" />
+    <Compile Include="Models\RVNotes.cs" />
+    <Compile Include="Models\RVPickupDrop.cs" />
+    <Compile Include="Models\RVRoute.cs" />
+    <Compile Include="Models\SRCalls.cs" />
+    <Compile Include="Models\TrailersProfile.cs" />
+    <Compile Include="Models\TrailerType.cs" />
+    <Compile Include="Models\TrucksProfile.cs" />
+    <Compile Include="Models\TruckType.cs" />
+    <Compile Include="Models\VendorCategory.cs" />
+    <Compile Include="Models\Vendors.cs" />
+    <Compile Include="Forms\Utilities\frmWebServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utilities\frmWebServicio.Designer.cs">
+      <DependentUpon>frmWebServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Revenue\frmRevenue.Designer.cs">
+      <DependentUpon>frmRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpensesInvoices\frmExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpensesInvoices\frmExpense.Designer.cs">
+      <DependentUpon>frmExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Accident\DamageAccident.resx">
+      <DependentUpon>DamageAccident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsIncidences\AlertsTrailer.resx">
+      <DependentUpon>AlertsTrailer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsIncidences\AlertsTruck.resx">
+      <DependentUpon>AlertsTruck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsIncidences\Appoinment.resx">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsIncidences\Incidencias.resx">
+      <DependentUpon>Incidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertsIncidences\PickupDrop.resx">
+      <DependentUpon>PickupDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpDriverPay.resx">
+      <DependentUpon>frmHelpDriverPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\HelpMttoTrucks.resx">
+      <DependentUpon>HelpMttoTrucks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\MttoAPU.resx">
+      <DependentUpon>MttoAPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\MttoTrailer.resx">
+      <DependentUpon>MttoTrailer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mantenimiento\MttoTrucks.resx">
+      <DependentUpon>MttoTrucks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\APUPrint.resx">
+      <DependentUpon>APUPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmPrintSettlement.resx">
+      <DependentUpon>frmPrintSettlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\TrailerPrint.resx">
+      <DependentUpon>TrailerPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\TruckPrint.resx">
+      <DependentUpon>TruckPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Revenue\frmDispatch.resx">
+      <DependentUpon>frmDispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Revenue\frmDriverPay.resx">
+      <DependentUpon>frmDriverPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmPrintCatalogs.resx">
+      <DependentUpon>frmPrintCatalogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmPrintExpenses.resx">
+      <DependentUpon>frmPrintExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpensesInvoices\frmResumens.resx">
+      <DependentUpon>frmResumens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAdministration.resx">
+      <DependentUpon>frmAdministration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMail.resx">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpAdministration.resx">
+      <DependentUpon>frmHelpAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpCustomer.resx">
+      <DependentUpon>frmHelpCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpExpenses.resx">
+      <DependentUpon>frmHelpExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpMail.resx">
+      <DependentUpon>frmHelpMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpManager.resx">
+      <DependentUpon>frmHelpManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpPhoneBook.resx">
+      <DependentUpon>frmHelpPhoneBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpRevenue.resx">
+      <DependentUpon>frmHelpRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpTripPlanner.resx">
+      <DependentUpon>frmHelpTripPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpTruckFleet.resx">
+      <DependentUpon>frmHelpTruckFleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpUtilities.resx">
+      <DependentUpon>frmHelpUtilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpVendors.resx">
+      <DependentUpon>frmHelpVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\frmHelpWebService.resx">
+      <DependentUpon>frmHelpWebService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Revenue\frmNotes.resx">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmPrintPdf.resx">
+      <DependentUpon>frmPrintPdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmReportsRevenue.resx">
+      <DependentUpon>frmReportsRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmUtilites.resx">
+      <DependentUpon>frmUtilites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmCatalogClients.resx">
+      <DependentUpon>frmCatalogClients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmCatalogInsurance.resx">
+      <DependentUpon>frmCatalogInsurance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmCatalogPhoneBook.resx">
+      <DependentUpon>frmCatalogPhoneBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TripPlanner\frmTripPlanner.resx">
+      <DependentUpon>frmTripPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmTruckFleet.resx">
+      <DependentUpon>frmTruckFleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Catalogs\frmCatalogVendor.resx">
+      <DependentUpon>frmCatalogVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\frmPrintUtilities.resx">
+      <DependentUpon>frmPrintUtilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmCategorys.resx">
+      <DependentUpon>frmCategorys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmPDType.resx">
+      <DependentUpon>frmPDType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmRVType.resx">
+      <DependentUpon>frmRVType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmTLType.resx">
+      <DependentUpon>frmTLType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmTRType.resx">
+      <DependentUpon>frmTRType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utilities\frmWebServicio.resx">
+      <DependentUpon>frmWebServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpensesInvoices\frmExpense.resx">
+      <DependentUpon>frmExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Revenue\frmRevenue.resx">
+      <DependentUpon>frmRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\btnfirst.png" />
+    <None Include="bin\Debug\Iconos\btnleft.png" />
+    <None Include="bin\Debug\Iconos\btnright.png" />
+    <None Include="bin\Debug\Iconos\btnendt.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="faviconblue.ico" />
+    <Content Include="faviconwhite.ico" />
+    <Content Include="icono.ico" />
+    <Content Include="PF-Original.ico" />
+    <None Include="Resources\home_16px_white.png" />
+    <None Include="Resources\semi_truck_16px_white.png" />
+    <None Include="Resources\card_payment_16px_white.png" />
+    <None Include="Resources\google_drive_16px_white.png" />
+    <None Include="Resources\books_16px_white.png" />
+    <None Include="Resources\administrative_tools_16px_white.png" />
+    <None Include="Resources\male_user_16px_white.png" />
+    <None Include="Resources\add_user_16px_white.png" />
+    <None Include="Resources\registration_16px_white.png" />
+    <None Include="Resources\denied_16px_white.png" />
+    <None Include="Resources\communicate_16px_white.png" />
+    <None Include="Resources\back_16px_white.png" />
+    <None Include="Resources\forward_16px_white.png" />
+    <None Include="Resources\process_16px.png" />
+    <None Include="Resources\customer_16px.png" />
+    <None Include="Resources\umbrella_16px.png" />
+    <None Include="Resources\market_square_16px.png" />
+    <None Include="Resources\phone_16px.png" />
+    <None Include="Resources\record_16px.png" />
+    <None Include="Resources\logout_rounded_left_26px.png" />
+    <None Include="Resources\car_insurance_16.png" />
+    <Content Include="truck.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagenes\C03-24-0899.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+  <PackageReference Include="AddConsoleExtension">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Castle.Core">
+      <Version>4.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="CircularProgressBar">
+      <Version>2.8.0.16</Version>
+    </PackageReference>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core">
+      <Version>4.0.0-alpha05</Version>
+    </PackageReference>
+    <PackageReference Include="itext7">
+      <Version>7.1.14</Version>
+    </PackageReference>
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Edge.SeleniumTools">
+      <Version>3.141.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <Version>3.1.10</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+      <Version>3.1.10</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging">
+      <Version>3.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Primitives">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net472">
+      <Version>1.0.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>5.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL">
+      <Version>3.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design">
+      <Version>2.0.0-preview1</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql.Json.NET">
+      <Version>5.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.Chrome.WebDriver">
+      <Version>85.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.Firefox.WebDriver">
+      <Version>0.27.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.InternetExplorer.WebDriver">
+      <Version>3.150.1</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.Support">
+      <Version>4.0.0-alpha07</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver">
+      <Version>4.0.0-alpha07</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver">
+      <Version>89.0.4389.2300-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver.MicrosoftDriver">
+      <Version>17.17134.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver">
+      <Version>90.0.782-pre</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.TypeConverter">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Console">
+      <Version>4.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Globalization">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.FileSystem.AccessControl">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.Pipes.AccessControl">
+      <Version>4.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reflection.TypeExtensions">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.AccessControl">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>4.7.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.AccessControl">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="UserAccountControlEnumerations">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="WFM.BasicUserControl">
+      <Version>1.1.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
