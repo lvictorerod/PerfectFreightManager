@@ -16,8 +16,8 @@ namespace Perfect_Freight_Manager.Forms.Accident
     public partial class DamageAccident : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
-        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
         string TblName = "registeraccidents";
         private int codigo = 0, cuentareg = 0, cuentadoc = 0;
         private int sgte = 0, cuenta = 0;

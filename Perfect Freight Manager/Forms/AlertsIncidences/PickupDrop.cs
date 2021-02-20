@@ -15,7 +15,7 @@ namespace Perfect_Freight_Manager.Forms.AlertsIncidences
     public partial class PickupDrop : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
         private string TblName = "rvpickupdrops";
         private int sgtepd = 0, cuentapd = 0;
         private int codigoPickup;

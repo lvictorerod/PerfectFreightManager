@@ -16,7 +16,7 @@ namespace Perfect_Freight_Manager.Forms.AlertsIncidences
     public partial class AlertsTruck : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
         string TblName = "trucksprofiles";
         int codigo;
         int sgtetr = 0;

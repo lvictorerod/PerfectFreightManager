@@ -31,8 +31,8 @@ namespace Perfect_Freight_Manager.Forms.Reports
     public partial class TrailerPrint : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
-        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
+        NpgsqlConnection conn2 = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
         int filtro = 0; 
         private string raiz = "", route = "";
         private string TrailerId, TrailerHours, TrailerDriver, TrailerNoOrder;

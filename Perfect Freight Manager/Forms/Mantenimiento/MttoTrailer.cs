@@ -16,7 +16,7 @@ namespace Perfect_Freight_Manager.Forms.Mantenimiento
     public partial class MttoTrailer : Form
     {
         AplicationContext conectandose = new AplicationContext();
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 123456; Database = PerfectFreight");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; User Id = postgres; Password = 12345; Database = PerfectFreight");
         private string TblName = "maintenancetrailers";
         private int sgte = 0, cuenta = 0;
         private int codigo, codigotl;
